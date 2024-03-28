@@ -12,16 +12,16 @@ model = xgb.XGBClassifier()
 model.load_model("model.json")
 scaler_filename = "scaler.save"
 sc = joblib.load(scaler_filename)
-genre_map = {0: 'BLUES',
-             1: 'CLASSICAL',
-             2: 'COUNTRY',
-             3: 'DISCO',
-             4: 'HIP-HOP',
-             5: 'JAZZ',
-             6: 'METAL',
-             7: 'POP',
-             8: 'REGGAE',
-             9: 'ROCK'}
+genre_map = {0: 'Blues',
+             1: 'Classical',
+             2: 'County',
+             3: 'Disco',
+             4: 'Hip-hop',
+             5: 'jazz',
+             6: 'Metel',
+             7: 'Pop',
+             8: 'Reggae',
+             9: 'Rock'}
 
 #dataframe generator function
 def getdataf(filename):
